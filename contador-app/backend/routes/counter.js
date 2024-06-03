@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const Counter = require('../models/Counter');
+const Contador = require('../models/Contador');
 
 router.post('/increment', async (req, res) => {
   try {
-    let counter = await Counter.findOne();
+    let counter = await Contador.findOne();
     if (!counter) {
-      counter = new Counter();
+      counter = new Contador();
       await counter.save();
     }
     counter.value += 1;
