@@ -70,7 +70,7 @@ const App: React.FC<AppProps> = (props) => {
     ]
 
     return (
-        <main className="flex min-h-screen flex-col items-center ">
+        <main className="flex min-h-screen flex-col items-center bg-black">
             <div className='pb-10'>
                 <h1 className="font-bold text-5xl text-500 -"> TP4-B Contadores </h1>
             </div>
