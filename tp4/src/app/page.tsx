@@ -9,7 +9,7 @@ type AppProps = {
   cantidad: number
 
 }
-export function App(props: AppProps) {
+export default function App(props: AppProps) {
   const [contadores, setContadores] = useState<Contador[]>(props.contadores || [])
   const [contador, setContador] = useState<Contador>(props.contador)
   const [cantidad, setCantidad] = useState<number>(props.cantidad)
