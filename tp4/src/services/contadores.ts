@@ -7,6 +7,7 @@ const prisma = new PrismaClient()
 export type Contador = {
     id: string
     numero: number
+    color: string
 }
 export async function getContadores() {
   return await prisma.contadores.findMany()
@@ -37,7 +38,8 @@ export async function disminuirContador(id: string) {
 export async function createContador() {
     return await prisma.contadores.create({
         data: {
-        numero: 0
+        numero: 0,
+        color: "white"
         }
     })
 }

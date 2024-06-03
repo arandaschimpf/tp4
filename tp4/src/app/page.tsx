@@ -49,8 +49,8 @@ const handleDisminuir = async (id: string) => {
         {contadores.map((contador) => (
           <li key={contador.id} className="flex flex-row items-center space-x-4">
             <span className='font-bold text-3xl'> Contador:{contador.numero}</span>
-            <button onClick={() => handleAumentar(contador.id)}>+</button>
-            <button onClick={() => handleDisminuir(contador.id)}>-</button>
+            <button className='font-bold text-3xl' onClick={() => handleAumentar(contador.id)}>+</button>
+            <button className='font-bold text-3xl' onClick={() => handleDisminuir(contador.id)}>-</button>
           </li>
         ))}
       </ul>

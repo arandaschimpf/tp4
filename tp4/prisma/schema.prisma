@@ -16,4 +16,5 @@ datasource db {
 model Contadores {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   numero Int
+  color String
 }
