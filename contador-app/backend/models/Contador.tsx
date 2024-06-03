@@ -8,3 +8,5 @@ const ContadorSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Contador', ContadorSchema);
+
+export default ContadorSchema;

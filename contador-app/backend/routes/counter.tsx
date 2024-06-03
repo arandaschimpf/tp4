@@ -1,6 +1,6 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const Contador = require('../models/Contador');
+import Contador from '../models/Contador';
 
 // Ruta para obtener el contador
 router.get('/', async (req, res) => {
@@ -10,8 +10,10 @@ router.get('/', async (req, res) => {
       counter = new Contador();
       await counter.save();
     }
+    console.log('Valor del contador obtenido:', counter.value); // Agrega este console.log
     res.json(counter);
   } catch (err) {
+    console.error('Error al obtener el contador:', err.message); // Agrega este console.error
     res.status(500).json({ message: err.message });
   }
 });
@@ -26,10 +28,12 @@ router.post('/increment', async (req, res) => {
     }
     counter.value += 1;
     await counter.save();
+    console.log('Valor del contador incrementado:', counter.value); // Agrega este console.log
     res.json(counter);
   } catch (err) {
+    console.error('Error al incrementar el contador:', err.message); // Agrega este console.error
     res.status(500).json({ message: err.message });
   }
 });
 
-module.exports = router;
+export default router;
