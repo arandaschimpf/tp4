@@ -21,7 +21,7 @@ const App: React.FC<AppProps> = (props) => {
             getContadores().then((contadores) => {
                 setContadores(contadores)
             })
-        }, 2000)
+        }, 1000)
 
     }, [])
 
@@ -36,11 +36,15 @@ const App: React.FC<AppProps> = (props) => {
     }
 
     const handleCreate = async () => {
-        if (contadores.length < 10) {
+        if (contadores.length < 10 && color !== '') {
             const newContador = await createContador(color);
             setContadores([...contadores, newContador]);
-            //setColor('')
-        } else {
+            setColor('')
+        } 
+        else if(color === '') {
+            return alert('Seleccione un color!');
+        }
+        else{
             return alert('No se pueden crear más contadores!');
         }
     };
@@ -52,6 +56,8 @@ const App: React.FC<AppProps> = (props) => {
 
 
     const colors = [
+        
+        { label: 'seleccionar', value: '' },
         { label: 'Rojo', value: '#BB2A23' },
         { label: 'Verde', value: '#0E6B1A' },
         { label: 'Azul', value: '#1B3E6B' },
@@ -60,10 +66,8 @@ const App: React.FC<AppProps> = (props) => {
         { label: 'Violeta', value: '#541AAA' },
         { label: 'Cyan', value: '#00FFFF' },
         { label: 'Magenta', value: '#FF00FF' },
-        { label: 'Naranja', value: '#DA9709' },
+        { label: 'Naranja', value: '#DA9709' }
     ]
-
-
 
     return (
         <main className="flex min-h-screen flex-col items-center ">
