@@ -27,9 +27,9 @@ export default function Home() {
     setCounter(data.count);
   };
 
-  if (counter === null) {
+  /*if (counter === null) {
     return <div className="container">Loading...</div>;
-  }
+  }*/
 
   return (
     <div className="container">
