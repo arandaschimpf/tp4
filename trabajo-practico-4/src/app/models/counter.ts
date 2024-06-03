@@ -1,9 +1,8 @@
 import mongoose, { Schema } from 'mongoose';
 
 const counterSchema = new Schema({
-    count: Number, //para el contador
- }
-);
+    count: { type: Number, default: 0 }, 
+  });
 
 const Counter = mongoose.models.Counter || mongoose.model("Counter", counterSchema);
 

@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
   export async function PUT(request: NextRequest) {
     const { newCount: count } = await request.json();
     await connect();
-    const updatedCounter = await Counter.findOneAndUpdate({}, { count }, { new: true, upsert: true });
+    const updatedCounter = await Counter.findOneAndUpdate({}, { $set: { count } }, { new: true, upsert: true });
     return NextResponse.json({ message: "Counter updated", count: updatedCounter.count }, { status: 200 });
   }
 
