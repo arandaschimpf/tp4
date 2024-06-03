@@ -35,17 +35,23 @@ export async function disminuirContador(id: string) {
   })
 }
 
-export async function createContador() {
+export async function createContador(color: string) {
     return await prisma.contadores.create({
         data: {
         numero: 0,
-        color: "white"
+        color: color
         }
     })
 }
 
 export async function getContador(id: string) {
     return await prisma.contadores.findUnique({
+        where: { id }
+    })
+}
+
+export async function deleteContador(id: string) {
+    return await prisma.contadores.delete({
         where: { id }
     })
 }
