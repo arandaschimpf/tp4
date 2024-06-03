@@ -1,26 +1,20 @@
-// Define tus tipos antes de usarlos en AppProps
-type Contador = {
-  id: number;
-  valor: number;
-  // Otros campos necesarios...
-};
+"use client"
+import React from "react"
+import App from "../components/App"
+import { AppProps } from "../types"
 
-// Define AppProps usando Contador
-export type AppProps = {
-  contadores: Contador[];
-  contador: Contador;
-  cantidad: number;
-};
-
-// Asegúrate de que tu componente App use correctamente los props
-export default function App(props: AppProps) {
-  const { contadores, contador, cantidad } = props;
-  
-  // Aquí va el resto de tu lógica del componente
-
-  return (
-    <div>
-      {/* Renderiza tu componente usando los props */}
-    </div>
-  );
+const props: AppProps = {
+    contadores: [],
+    contador: {
+        id: "1",
+        numero: 0,
+        color: "white"
+    },
+    cantidad: 0
 }
+
+const Page: React.FC = () => {
+    return <App {...props} />
+}
+
+export default Page
