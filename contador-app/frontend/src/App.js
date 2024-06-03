@@ -2,25 +2,25 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const App = () => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setContador] = useState(0);
 
   useEffect(() => {
-    const fetchCounter = async () => {
+    const fetchContador = async () => {
       const response = await axios.get('http://localhost:5000/api/counter');
-      setCounter(response.data.value);
+      setContador(response.data.value);
     };
-    fetchCounter();
+    fetchContador();
   }, []);
 
-  const incrementCounter = async () => {
+  const incrementContador = async () => {
     const response = await axios.post('http://localhost:5000/api/counter/increment');
-    setCounter(response.data.value);
+    setContador(response.data.value);
   };
 
   return (
     <div>
-      <h1>Counter: {counter}</h1>
-      <button onClick={incrementCounter}>Increment</button>
+      <h1>Contador: {counter}</h1>
+      <button onClick={incrementContador}>Increment</button>
     </div>
   );
 };
