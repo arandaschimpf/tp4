@@ -19,7 +19,7 @@ Una pantalla, responsive y pensada para ser utilizada desde un celular, donde se
 
 -> APLICACION ELEGIDA: B
 
--> LINK de vercel: https://tp4-e9g35rfqc-mateos-projects-241330a0.vercel.app
+-> LINK de vercel: https://tp4-black.vercel.app
 
 -> variable .env por si la dudas
    DATABASE_URL= "mongodb+srv://mateomaldonado:1234@cluster0.witj1ls.mongodb.net/DB_TP4?retryWrites=true&w=majority&appName=Cluster0"
