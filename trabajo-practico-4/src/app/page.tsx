@@ -1,13 +1,23 @@
 "use client";
 
-import dotenv from 'dotenv';
-dotenv.config();
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
   const [count, setCount] = useState(0);
 
+  useEffect(() => {
+    // Fetch the initial count from the database when the component mounts
+    const fetchCount = async () => {
+      const res = await fetch('/api/counter');
+      const data = await res.json();
+      setCount(data.count);
+    };
+
+    fetchCount();
+  }, []);
+
   const handleClick = async () => {
+    // Update the count in the database and the state when the button is clicked
     const res = await fetch('/api/counter', { 
       method: 'PUT',
       headers: {
