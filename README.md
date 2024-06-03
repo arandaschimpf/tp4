@@ -1,9 +1,10 @@
-============================
-TP4
+
+
 -> APLICACION ELEGIDA: B
+========================
 
 -> LINK de vercel: https://tp4-black.vercel.app
-
+===============================================
 -> variable .env por si la dudas (por si quiere correrlo local)
    DATABASE_URL= "mongodb+srv://mateomaldonado:1234@cluster0.witj1ls.mongodb.net/DB_TP4?retryWrites=true&w=majority&appName=Cluster0"
    
