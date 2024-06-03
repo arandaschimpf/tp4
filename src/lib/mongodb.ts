@@ -10,7 +10,7 @@ const options = {};
 let client;
 let clientPromise: Promise<MongoClient>;
 
-declare const global: NodeJS.Global; // <-- Agrega esta línea para definir el tipo de 'global'
+declare const global: NodeJS.Global & { _mongoClientPromise?: Promise<MongoClient> };
 
 if (process.env.NODE_ENV === 'development') {
   if (!global._mongoClientPromise) {
