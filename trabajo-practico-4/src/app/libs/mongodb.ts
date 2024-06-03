@@ -1,4 +1,7 @@
+require('dotenv').config();
+
 import mongoose from "mongoose";
+
 console.log("MONGODB_URI", process.env.MONGODB_URI);
 const {MONGODB_URI} = process.env;
 
