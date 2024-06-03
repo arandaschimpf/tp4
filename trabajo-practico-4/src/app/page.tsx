@@ -1,5 +1,7 @@
 "use client";
 
+import dotenv from 'dotenv';
+dotenv.config();
 import { useState } from 'react';
 
 export default function Home() {
