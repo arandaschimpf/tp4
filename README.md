@@ -14,3 +14,16 @@ Una pantalla con un botón que muestre un número. Dicho número viene desde la 
 
 Aplicación B (150 puntos):
 Una pantalla, responsive y pensada para ser utilizada desde un celular, donde se pueden agregar contadores, seleccionando un color al momento de agregarlo. Pueden haber hasta 10 contadores en simultáneo, haciendo scroll si se supera el alto de la pantalla. Los contadores se inicializan en 0, pueden sumar y restar, y su dominio son los numeros naturales. Los valores de estos contadores, y la presencia y color de estos debe ser persistidos en una db, y sincronizados entre todos los usuarios de la aplicación.
+
+
+
+
+
+Hola Profe Soy Lucas Sand, le mando el link de mi proyecto y tambien el link de mi repositoria de githib con el codigo del proyecto
+===================================================================================================================================
+
+Link a la Pagina:
+## Links
+
+- [Link 1](https://aplication-b.vercel.app/)
+- [link 2](https://github.com/LukySand/aplication-b)
