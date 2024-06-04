@@ -3,6 +3,7 @@
 //npx prisma generate       PARA GENERAR EL SCHEMA
 // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+//El subdominio en vercel es: https://tp4-roan.vercel.app/
 
 generator client {
   provider = "prisma-client-js"

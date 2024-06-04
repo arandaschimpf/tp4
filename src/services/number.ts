@@ -1,4 +1,4 @@
-//El subdominio en vercel es: https://tp4-despliegue.vercel.app/
+//El subdominio en vercel es: https://tp4-roan.vercel.app/
 'use server'
 import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
