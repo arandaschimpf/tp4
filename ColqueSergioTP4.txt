@@ -1,1 +1,1 @@
-https://colorcounters-git-master-sergiocolquemedranos-projects.vercel.app/dashboard/counter
+https://colorcounters-99cc.vercel.app/dashboard/counter
