@@ -7,11 +7,11 @@ const App = () => {
   useEffect(() => {
     const fetchCounter = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/counter');
-        console.log('Valor del contador obtenido:', response.data.value); // Agrega este console.log
+        const response = await axios.get('https://contador-j6a99n3n6-faree2002s-projects.vercel.app/api/counter');
+        console.log('Valor del contador obtenido:', response.data.value); 
         setCounter(response.data.value);
       } catch (error) {
-        console.error('Error al obtener el contador:', error.message); // Agrega este console.error
+        console.error('Error al obtener el contador:', error.message); 
       }
     };
     fetchCounter();
@@ -19,11 +19,11 @@ const App = () => {
 
   const incrementCounter = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/counter/increment');
-      console.log('Respuesta del servidor:', response.data); // Agrega este console.log
+      const response = await axios.post('https://contador-j6a99n3n6-faree2002s-projects.vercel.app/api/counter/increment');
+      console.log('Respuesta del servidor:', response.data); 
       setCounter(response.data.value);
     } catch (error) {
-      console.error('Error al incrementar el contador:', error.message); // Agrega este console.error
+      console.error('Error al incrementar el contador:', error.message); 
     }
   };
 

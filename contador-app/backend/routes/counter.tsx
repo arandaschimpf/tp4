@@ -10,10 +10,10 @@ router.get('/', async (req, res) => {
       counter = new Contador();
       await counter.save();
     }
-    console.log('Valor del contador obtenido:', counter.value); // Agrega este console.log
+    console.log('Valor del contador obtenido:', counter.value);
     res.json(counter);
   } catch (err) {
-    console.error('Error al obtener el contador:', err.message); // Agrega este console.error
+    console.error('Error al obtener el contador:', err.message);
     res.status(500).json({ message: err.message });
   }
 });
@@ -28,10 +28,10 @@ router.post('/increment', async (req, res) => {
     }
     counter.value += 1;
     await counter.save();
-    console.log('Valor del contador incrementado:', counter.value); // Agrega este console.log
+    console.log('Valor del contador incrementado:', counter.value);
     res.json(counter);
   } catch (err) {
-    console.error('Error al incrementar el contador:', err.message); // Agrega este console.error
+    console.error('Error al incrementar el contador:', err.message);
     res.status(500).json({ message: err.message });
   }
 });
