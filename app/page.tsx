@@ -10,8 +10,9 @@ export default async function Home() {
   console.log(counterValue)
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      
+      <div className='p-10 bg-white rounded-lg shadow-lg w-full h-full sm:w-3/4 lg:w-auto sm:h-3/4 lg:h-auto'>
       <Counter counter={counterValue}/>
+      </div>
     </main>
   );
 }
