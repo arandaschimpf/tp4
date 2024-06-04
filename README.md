@@ -14,3 +14,5 @@ Una pantalla con un botón que muestre un número. Dicho número viene desde la 
 
 Aplicación B (150 puntos):
 Una pantalla, responsive y pensada para ser utilizada desde un celular, donde se pueden agregar contadores, seleccionando un color al momento de agregarlo. Pueden haber hasta 10 contadores en simultáneo, haciendo scroll si se supera el alto de la pantalla. Los valores de estos contadores, y la presencia y color de estos debe ser persistidos en una db, y sincronizados entre todos los usuarios de la aplicación.
+
+##Link => https://tp4-db-agustin-s-projects-f5de95d9.vercel.app/
