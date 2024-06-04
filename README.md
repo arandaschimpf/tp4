@@ -22,8 +22,8 @@ Una pantalla, responsive y pensada para ser utilizada desde un celular, donde se
 Hola Profe Soy Lucas Sand, le mando el link de mi proyecto y tambien el link de mi repositoria de githib con el codigo del proyecto
 ===================================================================================================================================
 
-Link a la Pagina:
-## Links
+## Link a la Pagina
+- [https://aplication-b.vercel.app/](https://aplication-b.vercel.app/)
 
-- [Link 1](https://aplication-b.vercel.app/)
-- [link 2](https://github.com/LukySand/aplication-b)
+## Link al repositorio de GitHub
+- [https://github.com/LukySand/aplication-b](https://github.com/LukySand/aplication-b)
