@@ -6,5 +6,5 @@ Aplicación B (150 puntos): Una pantalla, responsive y pensada para ser utilizad
 
 =======================================================Sebastian Perez Lavooy======================================
 
-Esta es la URL: https://tp4-ohx0z7lcr-sebastian-perezs-projects-f434d4b1.vercel.app/
+Esta es la URL: https://tp4-olive.vercel.app/
 link del repo: https://github.com/SebaSubi/tp4
