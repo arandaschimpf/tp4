@@ -1,10 +1,9 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
-import { CounterChanel, incrementCounterValue } from '../app/actions'
+import { incrementCounterValue } from '../app/actions'
 import { createClient } from '@/utils/supabase/client'
-import { channel } from 'diagnostics_channel';
-import { count } from 'console';
+
 
 const supabase = createClient();
 
@@ -48,8 +47,8 @@ export default function Counter({ counter }: { counter: Counter | null }) {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
+    <main className="flex min-h-screen flex-col items-start justify-start">
+      <div className='flex flex-col gap-32'>
         <h2>Contador: {contador?.value}</h2>
         <button onClick={incrementarContador}>Incrementar</button>
       </div>

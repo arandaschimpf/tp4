@@ -1,9 +1,9 @@
 import Counter from '../components/counter'
-import {getCounterValue} from './actions'
+import {getValor} from './actions'
 
 export default async function Home() {
   const value = async () => {
-    const res = await getCounterValue();
+    const res = await getValor();
     return res;
   }
   const counterValue = await value();
