@@ -50,7 +50,9 @@ export default function Counter({ counter }: { counter: Counter | null }) {
     <main className="flex min-h-screen flex-col items-start justify-start">
       <div className='p-10 bg-green-600 rounded-lg shadow-lg w-full h-full sm:w-3/4 lg:w-auto sm:h-3/4 lg:h-auto'>
         <div className='flex flex-col gap-32'>
-          <h2>Contador: {contador?.value}</h2>
+          <div className='p-10 bg-white rounded-lg shadow-lg w-full h-full sm:w-3/4 lg:w-auto sm:h-3/4 lg:h-auto'>
+            <h2>Contador: {contador?.value}</h2>
+          </div>
           <button onClick={incrementarContador}>Incrementar</button>
         </div>
       </div>
