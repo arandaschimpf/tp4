@@ -1,6 +1,4 @@
-
-'use client';
-
+'use client'
 import Contador from '../app/components/counter';
 import { Inter } from 'next/font/google';
 
